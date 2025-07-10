@@ -488,14 +488,15 @@
                       </button>
                       <button
                         onclick={() => startEdit(todo.id)}
-                        class="rounded-lg bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 transition-colors hover:bg-blue-200 cursor-pointer"
+                        class="rounded-lg bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 transition-colors hover:bg-blue-200 cursor-pointer disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
                         disabled={todo.completed}
                       >
                         Edit
                       </button>
                       <button
                         onclick={() => deleteTodo(todo.id)}
-                        class="rounded-lg bg-red-100 px-3 py-1 text-sm font-medium text-red-800 transition-colors hover:bg-red-200 cursor-pointer"
+                        class="rounded-lg bg-red-100 px-3 py-1 text-sm font-medium text-red-800 transition-colors hover:bg-red-200 cursor-pointer disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
+                        disabled={todo.completed}
                       >
                         Delete
                       </button>
